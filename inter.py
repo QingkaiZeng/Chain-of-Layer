@@ -12,7 +12,7 @@ from CoLPromptGen import gen_ChainofLayers_prompt, gen_ChainofLayers_prompt_iter
 
 random.seed(42)
 
-def gen_promt_template(taxo_name, demo_path, demo_name = 'subtrees.json', numofExamples = 0, start = 0):
+def gen_promt_template(taxo_name, demo_path, demo_name = 'demo.json', numofExamples = 0, start = 0):
     '''
     generate prompt template for the given taxonomy
     taxo_name: the name of the taxonomy
@@ -49,7 +49,7 @@ def gen_promt_template(taxo_name, demo_path, demo_name = 'subtrees.json', numofE
         
     return prompt_temp
 
-def gen_promt_template_new(taxo_name, demo_path, demo_name = 'subtrees.json', numofExamples = 0, start = 0):
+def gen_promt_template_new(taxo_name, demo_path, demo_name = 'demo.json', numofExamples = 0, start = 0):
     '''
     generate prompt template for the given taxonomy
     taxo_name: the name of the taxonomy
@@ -287,7 +287,7 @@ def taxo_gen(client, messages_list, subgraphs, save_path, model, times = 1, chec
     with open(save_path + 'model_response.json', 'w') as f:
         json.dump(model_response, f)
 
-def run(client, taxo_name, taxo_path, model, save_path_model_response, numofExamples = 0, file_name = 'subtrees.json', new_prompt = False, ChainofLayers = False, iteratively = False, filter_mode = None, filter_topk = None, filter_scores_list = None):
+def run(client, taxo_name, taxo_path, model, save_path_model_response, numofExamples = 0, file_name = 'test.json', new_prompt = False, ChainofLayers = False, iteratively = False, filter_mode = None, filter_topk = None, filter_scores_list = None):
     '''
     generate the prompt list and ground truth list for the given taxonomy, then call the API to generate the response
     
@@ -382,7 +382,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--taxo_name', type=str, default='semeval_sci')
     parser.add_argument('--taxo_path', type=str, default='./dataset/processed/')
-    parser.add_argument('--demo_path', type=str, default='./results/demo/')
+    parser.add_argument('--demo_path', type=str, default='./demo_wordnet_train/')
     parser.add_argument('--model', type=str, default='gpt-4-1106-preview')
     parser.add_argument('--save_path_model_response', type=str, default='./results/taxo/')
     parser.add_argument('--numofExamples', type=int, default=0)

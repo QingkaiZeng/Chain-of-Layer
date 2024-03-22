@@ -4,7 +4,7 @@ from utils import construct_taxonomy
 
 def gen_ChainofLayers_prompt(taxo_name, demo_path, numofExamples = 5):
     
-    with open(demo_path + taxo_name + '/test.json', 'r') as f:
+    with open(demo_path + taxo_name + '/demo.json', 'r') as f:
         demos = f.readlines()
         demos = [json.loads(demo) for demo in demos][0:numofExamples]
 
@@ -154,7 +154,7 @@ def gen_ChainofLayers_prompt_iterative(taxo_name, demo_path, numofExamples = 5):
     messages = []
     messages.append({"role": "system", "content": 'You are an expert in constructing a taxonomy from a list of concepts.'})
     
-    with open(demo_path + taxo_name + '/test.json', 'r') as f:
+    with open(demo_path + taxo_name + '/demo.json', 'r') as f:
         demos = f.readlines()
         demos = [json.loads(demo) for demo in demos][0:numofExamples]
 

@@ -23,7 +23,7 @@ def gen_promt_template(mode = 0):
 
     return prompt_temp
 
-def run(client, taxo_name, taxo_path, model, save_path, numofExamples = 0, file_name = 'subtrees.json', mode = 0):
+def run(client, taxo_name, taxo_path, model, save_path, numofExamples = 0, file_name = 'test.json', mode = 0):
     '''
     generate the demo. save the generated demo to save_path.
     
@@ -113,7 +113,7 @@ def split_subtree(relation_list, entity_list, roots):
         
     return subtree
 
-def pharse_model_response_to_json(model_response_path, save_path, taxo_name, file_name = 'subtrees.json'):
+def pharse_model_response_to_json(model_response_path, save_path, taxo_name, file_name = 'test.json'):
     with open(model_response_path) as f:
         taxos = f.readlines()
     taxos = [json.loads(taxo) for taxo in taxos][0]
@@ -135,8 +135,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--taxo_name', type=str, default='semeval_sci')
     parser.add_argument('--taxo_path', type=str, default='./dataset/processed/')
-    parser.add_argument('--save_path_model_response', type=str, default='./results/raw_demo/')
-    parser.add_argument('--save_path', type=str, default='./results/demo/')
+    parser.add_argument('--save_path_model_response', type=str, default='./demos/raw_demo_gen/')
+    parser.add_argument('--save_path', type=str, default='./demos/demo_gen/')
     parser.add_argument('--model', type=str, default='gpt-4-1106-preview')
     parser.add_argument('--mode', type=int, default=0)
     parser.add_argument('--numofExamples', type=int, default=0)
