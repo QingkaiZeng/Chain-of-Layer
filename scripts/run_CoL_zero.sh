@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python infer_iterative.py \
+python infer.py \
   --openai_key your_openai_key \
   --taxo_name semeval_sci \
   --model gpt-4-turbo-preview \
