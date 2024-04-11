@@ -2,9 +2,9 @@ Table 1: Choosing Backbone Models for the Ensemble-Based Ranking Filter.
 
 |   | hit@1 | hit@5 | hit@10 | hit@20 | hit@30|
 |----------|----------|----------|----------|----------|----------|
-| BERT | 14.51 | 50.78 | 76.77 | 94.31 | 98.71 | 
-| RoBERTa | 10.20 | 38.65 | 66.66| 92.36 | 98.07 |
-| SciBERT | 16.54 | 50.93  | 75.41 | 95/64 | 98.96 |
+| BERT | 0.1451 | 0.5078 | 0.7677 | 0.9431 | 0.9871 | 
+| RoBERTa | 0.1020 | 0.3865 | 0.6666| 0.9236 | 0.9807 |
+| SciBERT | 0.1654 | 0.5093  | 0.7541 | 0.9564 | 0.9896 |
 
 Table 2: Evaluating Prompt Sensitivity within the DBLP Taxonomy. Due to GPT-4's inability to interpret TaxonomyGPT instructions, all findings are derived from experiments conducted with GPT-3.5.
 
