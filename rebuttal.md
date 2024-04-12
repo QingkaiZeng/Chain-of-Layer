@@ -86,7 +86,7 @@ Table 5: Performance of CoL with Top-K Entities Retained by the Ensemble-Based R
 |            | p_e     | r_e   | f_e   | p_a   | r_a     | f_a   | 
 | **top10**  | 0.5422  | 0.4975| 0.5186| 0.8629| 0.5374  | 0.6597| 
 | **top15**  | 0.5767  | 0.4885| 0.5283| 0.8857| 0.4831  | 0.6235| 
-| **top20**  | 0.6098  | 0.3582| 0.4308| 0.9274| 0.3398  | 0.4762|     
+| **top20**  | 0.5165  | 0.3983| 0.4498| 0.9607| 0.4373  | 0.6011|     
 
 Table 6: Analysis of Token Consumption on WordNet
 
