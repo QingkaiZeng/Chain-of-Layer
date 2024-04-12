@@ -60,7 +60,7 @@ Table 4: Performance of the CTP Model with LLaMa-2-7B as the Backbone Across Fou
 | **WordNet**  | 0.  | 0.| 0.| 0.| 0.  | 0.|
 | **Wiki**     | 0.  | 0.| 0.| 0.| 0.  | 0.| 
 | **DBLP**     | 0.  | 0. | 0.| 0.| 0.  | 0.|
-| **SemEval-Sci**     | 0.  | 0. | 0.| 0.| 0.  | 0.|   
+| **SemEval-Sci**     | 0.4833  | 0.4192 | 0.4490 | 0.6198| 0.5409  | 0.5777 |   
 
 
 
