@@ -53,15 +53,14 @@ Table 3: Performance Comparison of TaxonomyGPT and CoL Using LLaMa-2-Chat-70B
 | CoL          | 0.36            | 0.1324       | 0.1931 | 0.6924        | 0.1268       | 0.2135 |
 | TaxonomyGPT  | 0               | 0            | 0      | 0             | 0            | 0      |
 
-Table 4:
-
+Table 4: Performance of the CTP Model with LLaMa-2-7B as the Backbone Across Four Benchmark Taxonomies
 |              | Edge            |              |        | Ancestor      |              |        | 
 |--------------|-----------------|--------------|--------|---------------|--------------|--------------|
 |              | Precision       | Recall       | F1     | Precision     | Recall       | F1     |
-| **WordNet**  | 0.9792  | 0.9499| 0.9643| 0.9917| 0.9599  | 0.9754|
-| **Wiki**     | 0.9590  | 0.8696| 0.9104| 0.9855| 0.8972  | 0.9373| 
-| **DBLP**     | 0.9786  | 0.916 | 0.9448| 0.9891| 0.9313  | 0.9579|
-| **SemEval-Sci**     | 0.9786  | 0.916 | 0.9448| 0.9891| 0.9313  | 0.9579|   
+| **WordNet**  | 0.  | 0.| 0.| 0.| 0.  | 0.|
+| **Wiki**     | 0.  | 0.| 0.| 0.| 0.  | 0.| 
+| **DBLP**     | 0.  | 0. | 0.| 0.| 0.  | 0.|
+| **SemEval-Sci**     | 0.  | 0. | 0.| 0.| 0.  | 0.|   
 
 
 
@@ -97,4 +96,12 @@ Table 6: Analysis of Token Consumption on WordNet
 | TaxonomyGPT (gpt-3.5) | 178,503           | 20,015                  | 198,518      |
 
 
+Table 7: Performance of Ensemble-Based Content Filtering for Taxonomy Induction Across Four Benchmark Taxonomies
 
+|              | Edge            |              |        | Ancestor      |              |        | 
+|--------------|-----------------|--------------|--------|---------------|--------------|--------------|
+|              | Precision       | Recall       | F1     | Precision     | Recall       | F1     |
+| **WordNet**  | 0.  | 0.| 0.| 0.| 0.  | 0.|
+| **Wiki**     | 0.  | 0.| 0.| 0.| 0.  | 0.| 
+| **DBLP**     | 0.  | 0. | 0.| 0.| 0.  | 0.|
+| **SemEval-Sci**     | 0.  | 0. | 0.| 0.| 0.  | 0.|   
