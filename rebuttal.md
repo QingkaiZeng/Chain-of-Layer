@@ -98,10 +98,9 @@ Table 6: Analysis of Token Consumption on WordNet
 
 Table 7: Performance of Ensemble-Based Content Filtering for Taxonomy Induction Across Four Benchmark Taxonomies
 
-|              | Edge            |              |        | Ancestor      |              |        | 
-|--------------|-----------------|--------------|--------|---------------|--------------|--------------|
-|              | Precision       | Recall       | F1     | Precision     | Recall       | F1     |
-| **WordNet**  | 0.  | 0.| 0.| 0.| 0.  | 0.|
-| **Wiki**     | 0.  | 0.| 0.| 0.| 0.  | 0.| 
-| **DBLP**     | 0.  | 0. | 0.| 0.| 0.  | 0.|
-| **SemEval-Sci**     | 0.  | 0. | 0.| 0.| 0.  | 0.|   
+|              | Hit@1            |
+|--------------|-----------------|
+| **WordNet**  | 0.1774 |
+| **Wiki**     | 0.1168 |
+| **DBLP**     | 0.0000 |
+| **SemEval-Sci**     | 0.0070 | 
